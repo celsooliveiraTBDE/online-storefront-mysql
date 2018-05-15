@@ -1,0 +1,29 @@
+{
+  "name": "online-storefront-mysql",
+  "version": "1.0.0",
+  "description": "homework bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celsooliveiraTBDE/online-storefront-mysql.git"
+  },
+  "keywords": [
+    "bootcamp",
+    "node",
+    "npm",
+    "mysql"
+  ],
+  "author": "Celso Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celsooliveiraTBDE/online-storefront-mysql/issues"
+  },
+  "homepage": "https://github.com/celsooliveiraTBDE/online-storefront-mysql#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0",
+    "mysql": "^2.15.0"
+  }
+}
