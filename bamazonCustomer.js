@@ -106,7 +106,7 @@ function afterConnection() {
             });
     });
 }
-function updateProduct(new_qty, booze_var) {
+var UpdateStuff = function updateProduct(new_qty, booze_var) {
     console.log("Updating inventory quantities...\n");
     var query = connection.query(
         "UPDATE products SET ? WHERE ?",
@@ -120,12 +120,13 @@ function updateProduct(new_qty, booze_var) {
         ],
         function (err, res) {
             console.log(res.affectedRows + " products updated!\n");
-            // Call deleteProduct AFTER the UPDATE completes
         }
     );
     // logs the actual query being run
     console.log(query.sql);
-}
+};
+
+module.exports = UpdateStuff; 
 // If not, the app should log a phrase like Insufficient quantity!, and then prevent the order from going through.
 
 
