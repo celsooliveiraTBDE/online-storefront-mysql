@@ -57,15 +57,14 @@ function mainMenu() {
 function ViewProducts() {
     connection.query("SELECT * FROM products", function (err, res) {
         if (err) throw err;
-        // console.log(res);
-        console.log("id |         -------product-------       |  category  | price | in stock \n");
+        console.log(`-----------THE BEST DRINK EVER--------------\n
+        id |         -------product-------       |  category  | price | in stock \n`);
 
         for (var i = 0; i < res.length; i++) {
             console.log(res[i].item_id + " | " + res[i].product_name + " | " + res[i].department_name + " | " + res[i].price + " | " + res[i].stock_qty);
         }
         console.log("-----------------------------------");
         mainMenu();
-
     })
 };
 
