@@ -11,7 +11,7 @@ Please reference the literature for SQL database format for a complete schema of
 It will contain one tables labeled 'products'. 
 The products table should have each of the following columns:
 
-[bamazon.sql](../online-storefront-mysql/master/bamazon.sql)
+[bamazon.sql](..//master/bamazon.sql)
 
 
 item_id (unique id for each product)
